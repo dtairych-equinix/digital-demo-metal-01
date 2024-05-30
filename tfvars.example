@@ -1,0 +1,4 @@
+auth_token = "get from metal portal"
+metal_org_id = "get from metal portal"
+metal_metro = "AM"
+metal_sku = "m3.small.x86"
