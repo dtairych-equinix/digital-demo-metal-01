@@ -9,8 +9,7 @@ resource "equinix_metal_project" "network-test" {
 }
 
 resource "equinix_metal_device" "host" {
-  # for_each         = var.hosts
-  hostname         = "metal-backend"
+  hostname         = "Metal Test Device"
   plan             = var.metal_sku
   metro            = var.metal_metro
   operating_system = "ubuntu_22_04"
