@@ -4,12 +4,12 @@ resource "equinix_metal_ssh_key" "hybrid" {
 }
 
 resource "equinix_metal_project" "network-test" {
-  name            = "metal-internet-test"
+  name            = "Digital Demo 01"
   organization_id = var.metal_org_id
 }
 
 resource "equinix_metal_device" "host" {
-  hostname         = "Metal Test Device"
+  hostname         = "digital-demo-01"
   plan             = var.metal_sku
   metro            = var.metal_metro
   operating_system = "ubuntu_22_04"
