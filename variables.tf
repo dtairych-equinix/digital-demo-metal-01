@@ -10,6 +10,11 @@ variable "metal_org_id" {
     sensitive = true
 }
 
+variable "metal_project_name" {
+    description = "Name of the Equinix Metal project to be created"
+    type = string
+}
+
 variable "metal_metro" {
     description = "The metro in which the Equinix Metal server will be deployed"
     type = string

@@ -4,7 +4,7 @@ resource "equinix_metal_ssh_key" "hybrid" {
 }
 
 resource "equinix_metal_project" "network-test" {
-  name            = "Digital Demo 01"
+  name            = var.metal_project_name
   organization_id = var.metal_org_id
 }
 
