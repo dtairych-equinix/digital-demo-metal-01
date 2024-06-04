@@ -70,5 +70,5 @@ terraform destroy --auto-approve
 
 
 
-PLEASE NOTE: this repo creates an SSH key for simplicity.  This should never be done in production as it exposes the key credentials as plain text in the TF state file.  
+PLEASE NOTE: this repo creates an SSH key using Terraform for simplicity.  This should never be done in production as it exposes the key credentials as plain text in the TF state file.  Please generate and store sensitive credentials (like SSH keys) in a secure manner.
 
