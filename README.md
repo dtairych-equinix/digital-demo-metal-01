@@ -14,7 +14,7 @@ Visually, this can be represented as follows:
 |:--:| 
 | *Equinix Metal Network Diagram* |
 
-You can read more about the connectivity metal has on PeeringDB: https://www.peeringdb.com/net/5230
+You can read more about the global connectivity that Equinix Metal maintains on PeeringDB: https://www.peeringdb.com/net/5230
 
 Through the combination of these services, Equinix Metal can intelligently steer traffic to a destination using the most appropriate path.
 
