@@ -10,8 +10,9 @@ Equinix Metal achieves this network performance by optimising traffic leaving th
 
 Visually, this can be represented as follows:
 
-![Equinix Metal Network Diagram](https://deploy.equinix.com/developers/docs/metal/images/layer3-networking/metal-network-diagram.png)
-*Equinix Metal Network Diagram*
+| ![Equinix Metal Network Diagram](https://deploy.equinix.com/developers/docs/metal/images/layer3-networking/metal-network-diagram.png) | 
+|:--:| 
+| *Equinix Metal Network Diagram* |
 
 You can read more about the connectivity metal has on PeeringDB: https://www.peeringdb.com/net/5230
 
