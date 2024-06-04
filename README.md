@@ -8,7 +8,9 @@ Equinix Metal achieves this network performance by optimising traffic leaving th
 - Aggregating multiple tier 1 carriers upstream
 - Operating a dedicated global backbone
 
-*create image of network*
+Visually, this can be represented as follows:
+
+![Equinix Metal Network Diagram](https://deploy.equinix.com/developers/docs/metal/images/layer3-networking/metal-network-diagram.png)
 
 You can read more about the connectivity metal has on PeeringDB: https://www.peeringdb.com/net/5230
 
