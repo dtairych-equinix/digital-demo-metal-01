@@ -22,5 +22,53 @@ This repo creates an Equinix Metal project, an SSH key and a server that allows 
 
 *create image of topology*
 
-PLEASE NOTE: this repo creates an SSH key using Terraform for simplicity.  This should never be done in production as it exposes the key credentials as plain text in the TF state file.  Please generate and store sensitive credentials (like SSH keys) in a secure manner.
+## Using this repo
+
+To start, clone this repo to a local directory.  
+
+Copy the tfvars.example file and populate with the appropriate values.  The most important values here are the API keys and Organisation ID.  Save this file as terraform.tfvars
+
+```
+cp ./tfvars.example ./terraform.tfvars
+```
+
+With the variables updated, initialise the repo:
+
+```
+terraform init
+```
+
+Now that the required providers have been installed.  You can plan the deployment, otherwise, you can just apply it directly:
+
+```
+terraform apply --auto-approve
+```
+
+Once Terraform completes its deloyment, the output string will allow for a simple way to connect to the server
+
+```
+Apply complete! Resources: 6 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+ssh_string = "ssh -i ./private_key root@147.75.82.91"
+```
+
+You can copy the quoted string and run it from a terminal in the same directory to connect to the generated server.
+
+Once logged into the Equinix Metal server, you can simply verify the connectivity and latency to a common internet destination, such as Google DNS:
+
+```
+ping 8.8.8.8
+```
+
+With the successful demonstration of Equinix Metal's native networking capabilities, the environment can be destroyed:
+
+```
+terraform destroy --auto-approve
+```
+
+
+
+PLEASE NOTE: this repo creates an SSH key for simplicity.  This should never be done in production as it exposes the key credentials as plain text in the TF state file.  
 
